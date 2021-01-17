@@ -1,0 +1,611 @@
+/**************************************************************
+***************************************************************
+	
+	Template Name: Photo gallarey
+	Template URI: http://www.gointech.com
+	Description: photo related template
+	Author: Bakul Ray
+	Author URI: http://www.gaintech.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+*************************************************************
+*************************************************************
+
+	1. Typography
+	2. Header-Section
+	3. Slider-Section
+	4. Service-Section
+	5. Team-Section
+	6. Skills-Section
+	7. Portfolio-Section
+	8. Contract-Section
+	9. Footer-Section
+
+**************************************************************
+**************************************************************/
+
+
+/************** Typography ************************/
+body{
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h2{
+	font-family: 'Titillium Web', sans-serif;
+	font-size:18px;
+	font-weight:700;
+	color:#232323;
+}
+.btn-success:hover {
+	color: #fff;
+	background:none;
+	border-color:none;
+}
+p{
+	font-size:16px;
+	color:#232323;
+}
+
+	
+
+
+/************ Header-Section Start ************/
+
+.header-section {
+	background: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	z-index: 9999;
+	padding: 30px 200px;
+}
+
+.header-section .menu ul{
+	display:flex;
+	justify-content:center;
+	list-style:none;
+}
+
+.menu {
+	margin-left: 80%;
+}
+
+.header-section .menu ul li a {
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: block;
+	color: #FFFFFF;
+	font-weight: 400;
+}
+.header-section .menu ul li a:hover{
+	background:#643a79;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+
+.header-section .menu ul li a.active {
+	background: #643a79;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+
+
+/************ Slider-section Start ************/
+.slider-section{
+	background:#87509c;
+	padding:180px 0px;
+	position:relative;
+	z-index:9;
+}
+.slider-content{
+	margin-top: 100px;
+	padding: 0px 50px;
+}
+
+.slider-content h1 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 27px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+.slider-content a {
+	color: #fff;
+	background-color: #eb7d4b;
+	border: none;
+	padding: 13px 62px;
+	margin: 30px auto;
+	font-weight: 700;
+	font-family: 'Titillium Web', sans-serif;
+	position:relative;
+	z-index:1;
+}
+.slider-content a::after{
+	content:'';
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:0;
+	height:100%;
+	background:#27ae60;
+	border-radius: .25rem;
+	transition:.4s;
+	z-index:-1;
+}
+.slider-content a:hover::after{
+	width:100%;
+}
+
+
+/************* Service-Section Start *************/
+.service-section{
+	background:#17c2a4;
+	padding:70px 0px;
+}
+.service-content{
+	padding-bottom:50px;
+}
+
+.service-content h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+}
+.service-content hr{
+	border-top:0px;
+	border-bottom:3px solid #14a58c;
+	width:50px;
+}
+.service-content .service-text{
+	width:50%;
+	margin:auto;
+	color: #FFFFFF;
+}
+
+.service-item{
+	padding:10px 0px;
+}
+.service-item a {
+	display: block;
+	margin: 30px auto;
+}
+.service-item a img{
+	max-width:100%;
+	height:auto;
+}
+
+.service-item h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 5px 0px;
+}
+.service-item p{
+	color:#FFFFFF;
+}
+
+
+
+/************* Team-Section Start *************/
+.team-section{
+	background:#e7f1f8;
+	padding:70px 0px;
+}
+.team-content{
+	padding-bottom:50px;
+}
+
+.team-content h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #3c4761;
+}
+.team-content hr{
+	border-top:0px;
+	border-bottom:3px solid #14a58c;
+	width:50px;
+}
+.team-content p {
+	color: #3c4761;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.team-item{
+	padding:10px 0px;
+}
+.team-item img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin: 16px auto;
+	border: 1px solid #e9edf0;
+}
+
+.team-item h2 {
+	text-transform: uppercase;
+	font-size: 19px;
+	color: #27283d;
+	margin: 0px;
+}
+.team-item .team-title{
+	color: #30bae7;
+}
+.team-item .team-info{
+	color: #788192;
+	font-size: 16px;
+	font-weight: 400;
+}
+.team-social ul{
+	display:flex;
+	justify-content:center;
+	list-style:none;
+}
+.team-social ul li{
+	margin:0px 5px;
+}
+.team-social ul li a i {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	padding: 8px 8px;
+	font-size: 15px;
+	background: #bdd1df;
+	color: #FFFFFF;
+	transition:.4s;
+}
+.team-social ul li a i:hover{
+	background:#e67e22;
+	transform:rotate(750deg);
+}
+
+
+
+
+/************* Skills-Section Start *************/
+.skills-section{
+	background:#FFFFFF;
+	padding:70px 0px;
+}
+.skills-content{
+	padding-bottom:100px;
+}
+
+.skills-content h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #27283d;
+}
+.skills-content hr{
+	border-top:0px;
+	border-bottom:3px solid #14a58c;
+	width:50px;
+}
+.skills-content .skills-text{
+	width:50%;
+	margin:auto;
+	color: #3c4761;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.skills-item{
+	padding:10px 0px;
+}
+
+.skills-item h1 {
+	text-transform: uppercase;
+	font-size: 47px;
+	color: #27283d;
+	height: 150px;
+	width: 150px;
+	border: 8px solid red;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	padding: 43px 10px;
+	font-weight: 400;
+}
+
+.skills-item h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #27283d;
+	padding: 5px 0px;
+}
+
+
+/************* portfolio-Section Start *************/
+.portfolio-section{
+	background:#ffdd99;
+	padding:70px 0px;
+}
+.portfolio-content{
+	padding-bottom:100px;
+}
+
+.portfolio-content h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #27283d;
+}
+.portfolio-content hr{
+	border-top:0px;
+	border-bottom:3px solid #14a58c;
+	width:50px;
+}
+.portfolio-content .portfolio-text{
+	width:50%;
+	margin:auto;
+	color: #3c4761;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.portfolio-item{
+	padding:10px 0px;
+}
+.portfolio-item img{
+	max-width:100%;
+	height:auto;
+	margin:20px auto;
+}
+
+.portfolio-item h2 {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #27283d;
+	padding: 7px 0px;
+	font-weight: 400;
+}
+
+/****** portfolio-menu ******/
+.portfolio-menu{
+	padding-bottom: 14px;
+}
+
+.portfolio-menu ul{
+	display:flex;
+	justify-content:center;
+	list-style:none;
+}
+.portfolio-menu ul li{
+	margin:5px 10px;
+}
+
+.portfolio-menu ul li a {
+	background: #ebc985;
+	border-radius: 3px;
+	display: block;
+	padding: 6px 21px;
+	text-decoration: none;
+	color: #232323;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.portfolio-menu ul li a:hover{
+	background:#FFFFFF;
+}
+
+.portfolio-menu ul li a.active{
+	background:#FFFFFF;
+}
+
+.project-btn a{
+	color: #fff;
+	background-color: #17c2a4;
+	border: none;
+	padding: 13px 62px;
+	margin: 30px auto;
+	font-weight: 700;
+	font-family: 'Titillium Web', sans-serif;
+	position: relative;
+	z-index: 1;
+}
+
+.project-btn a::after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 0;
+	height: 100%;
+	background: #27ae60;
+	border-radius: .25rem;
+	transition: .4s;
+	z-index: -1;
+}
+.project-btn a:hover::after{
+	width:100%;
+}
+
+
+
+
+/************* Skills-Section Start *************/
+.skills-section{
+	background:#FFFFFF;
+	padding:70px 0px;
+}
+.skills-content{
+	padding-bottom:100px;
+}
+
+.skills-content h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #27283d;
+}
+.skills-content hr{
+	border-top:0px;
+	border-bottom:3px solid #14a58c;
+	width:50px;
+}
+.skills-content .skills-text{
+	width:50%;
+	margin:auto;
+	color: #3c4761;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.skills-item{
+	padding:10px 0px;
+}
+
+.skills-item h1 {
+	text-transform: uppercase;
+	font-size: 47px;
+	color: #27283d;
+	height: 150px;
+	width: 150px;
+	border: 8px solid red;
+	border-radius: 50%;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	padding: 43px 10px;
+	font-weight: 400;
+}
+
+.skills-item h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #27283d;
+	padding: 5px 0px;
+}
+
+
+/************* Contract-Section Start *************/
+.contract-section{
+	background:#3c5499;
+	padding:70px 0px;
+}
+.contract-content{
+	padding-bottom:100px;
+}
+
+.contract-content h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: #FFFFFF;
+}
+.contract-content hr{
+	border-top:0px;
+	border-bottom:3px solid #14a58c;
+	width:50px;
+}
+.contract-content .contract-text{
+	color: #FFFFFF;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+.contract-form{
+	width:68%;
+	margin:auto;
+}
+
+.contract-form .form-group{
+	margin:10px 0px;
+	color:#FFFFFF;
+}
+.contract-form .form-group input[type="submit"] {
+	color: #fff;
+	background-color: #17c2a4;
+	border: none;
+	margin: 30px auto;
+	font-weight: 700;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 3px;
+	height: 50px;
+}
+
+
+.form-textarea .form-control {
+	max-height:200px;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #FFFFFF;
+	height: 50px;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+/******** Footer-Section Start ********/
+.footer-section{
+	background:#344b8e;
+	padding:10px 0px;
+}
+.footer-menu ul{
+	display:flex;
+	justify-content:center;
+	list-style:none;
+}
+.footer-menu ul li {
+	margin: 5px 32px;
+}
+.footer-menu ul li a{
+	text-decoration:none; 
+	display:block;
+	color:#FFFFFF;	
+}
+.footer-menu ul li a {
+	text-decoration: none;
+	display: block;
+	color: #FFFFFF;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	padding: 10px 0px;
+}
+.footer-menu ul li a:hover{
+	color:#30bae7;
+}
+
+.footer-menu ul li a.active{
+	color:#30bae7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

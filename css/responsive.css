@@ -1,0 +1,107 @@
+@media all and (max-width :991px){
+	
+	.portfolio-content .portfolio-text {
+		width: 90%;
+		margin: auto;
+	}
+	.skills-content .skills-text {
+		width: 90%;
+		margin: auto;
+	}
+	.menu {
+		margin-left: 0%;
+	}
+	.logo {
+		width: 100%;
+		margin: 30px auto;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+@media all and (max-width :832px){
+	
+	.footer-menu ul li {
+		margin: 5px 10px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+@media all and (max-width :767px){
+	.contract-form {
+		width: 90%;
+		margin: auto;
+	}
+	.portfolio-content .portfolio-text {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width :562px){
+	.footer-menu ul{
+		display:block;
+	}
+	
+}
+
+
+
+
+@media all and (max-width :537px){
+	.header-section .menu ul {
+		display: block;
+		text-align:center;
+	}
+	
+	.header-section {
+		padding: 30px 0px;
+	}
+	
+	.slider-content {
+		margin-top: 300px;
+		padding: 0px 50px;
+	}
+}
+
+
+
+
+@media all and (max-width :380px){
+	
+	.portfolio-menu {
+		padding:50px;
+	}
+	.portfolio-menu ul {
+		display: block;
+		text-align:center;
+	}
+	.slider-content{
+		margin-top: 100px;
+		padding: 0px 20px;
+	}
+	.slider-content {
+		margin-top: 200px;
+		padding: 0px 50px;
+	}
+	
+}
